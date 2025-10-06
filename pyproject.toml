@@ -1,0 +1,33 @@
+[project]
+name = "falimage"
+version = "0.2.0"
+description = "Image generation utilities/scripts"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "click",
+  "fal_client",
+  "requests",
+  "pillow",
+  "python-dotenv",
+  "piexif>=1.1.3",
+]
+
+[project.scripts]
+falimage = "falimage.cli:main"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "mypy",
+  "types-requests",
+]
+
+[tool.uv]
+managed = true
+python-preference = "managed"
+default-groups = ["dev"]

@@ -1,0 +1,3 @@
+FAL_KEY=<API KEY HERE>
+SAFETENSORS_URL=<where to download LoRAs from>
+SOURCE_IMAGE_URL=<where to download images from>
